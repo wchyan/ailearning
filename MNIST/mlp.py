@@ -33,6 +33,8 @@ y_ = tf.nn.softmax(tf.matmul(y1_drop, W2) + b2)
 
 cost = tf.reduce_mean(-tf.reduce_sum(y*tf.log(y_), reduction_indices=1))
 optimizer = tf.train.GradientDescentOptimizer(learn_rate).minimize(cost)
+correct_prediction = tf.equal(tf.argmax(y_, 1), tf.argmax(y, 1))
+accuracy = tf.reduce_mean(tf.cast(correct_prediction, tf.float32))
 
 init = tf.global_variables_initializer()
 
@@ -48,8 +50,6 @@ with tf.Session() as sess:
             for _ in range(1000):
                 xs, ys = sess.run([batch_xs, batch_ys])
                 ys = sess.run(tf.one_hot(ys, output_unit))
-                correct_prediction = tf.equal(tf.argmax(y_, 1), tf.argmax(y, 1))
-                accuracy = tf.reduce_mean(tf.cast(correct_prediction, tf.float32))
                 _, c, acc_val = sess.run([optimizer, cost, accuracy], feed_dict={x: xs.reshape([-1, input_unit]), y: ys, keep_prop: keep_prop_val})
                 acc.append(acc_val)
         except tf.errors.OutOfRangeError as e:

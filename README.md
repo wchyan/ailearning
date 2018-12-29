@@ -1,10 +1,12 @@
-MNIST
+
+# MNIST
 
 在tensorflow学习中，MNIST数据集是入门级的数据集。在各种教材中，都是使用的tensorflow.examples.tutourials.mnist或者其他早期的包。tensoflow的版本更新很快，导致该包在不同的版本上不能运行。在学习过程中，将MNIST的数据处理独立出来，可以更加详细的了解数据的加载处理过程，并加上了Logistic Regression, MLP和CNN的练习例子，源码在github上下载。
 
 * 数据：mnist_dataset.py可以自行下载，也可在 http://yann.lecun.com/exdb/mnist/ 下载，在使用中指定目录即可
 * 在Logistic Regression, MLP及 CNN对比中，从精度可以看出CNN的威力，同样训练次数，CNN的精度可以达到99%
 
+运行结果：
 $ python logistic_regression.py<br>
 Epoch: 0001 cost= 0.6083 accuracy=0.781133<br>
 Epoch: 0002 cost= 0.4808 accuracy=0.876433<br>

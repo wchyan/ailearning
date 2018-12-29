@@ -5,24 +5,24 @@ MNIST
 * 数据：mnist_dataset.py可以自行下载，也可在 http://yann.lecun.com/exdb/mnist/ 下载，在使用中指定目录即可
 * 在Logistic Regression, MLP及 CNN对比中，从精度可以看出CNN的威力，同样训练次数，CNN的精度可以达到99%
 
-$ python logistic_regression.py
-Epoch: 0001 cost= 0.6083 accuracy=0.781133
-Epoch: 0002 cost= 0.4808 accuracy=0.876433
-Epoch: 0003 cost= 0.4314 accuracy=0.888667
-Epoch: 0004 cost= 0.4046 accuracy=0.894733
-Epoch: 0005 cost= 0.3875 accuracy=0.898317
+$ python logistic_regression.py<br>
+Epoch: 0001 cost= 0.6083 accuracy=0.781133<br>
+Epoch: 0002 cost= 0.4808 accuracy=0.876433<br>
+Epoch: 0003 cost= 0.4314 accuracy=0.888667<br>
+Epoch: 0004 cost= 0.4046 accuracy=0.894733<br>
+Epoch: 0005 cost= 0.3875 accuracy=0.898317<br>
 
-$ python mlp.py
-Epoch: 0001 cost= 0.5855 accuracy=0.746833
-Epoch: 0002 cost= 0.4982 accuracy=0.864967
-Epoch: 0003 cost= 0.4333 accuracy=0.887717
-Epoch: 0004 cost= 0.3097 accuracy=0.901783
-Epoch: 0005 cost= 0.3945 accuracy=0.909750
+$ python mlp.py<br>
+Epoch: 0001 cost= 0.5855 accuracy=0.746833<br>
+Epoch: 0002 cost= 0.4982 accuracy=0.864967<br>
+Epoch: 0003 cost= 0.4333 accuracy=0.887717<br>
+Epoch: 0004 cost= 0.3097 accuracy=0.901783<br>
+Epoch: 0005 cost= 0.3945 accuracy=0.909750<br>
 
-$ python cnn.py
-Epoch: 0001 cost= 0.2593 accuracy=0.879617
-Epoch: 0002 cost= 0.2437 accuracy=0.968667
-Epoch: 0003 cost= 0.2490 accuracy=0.979500
-Epoch: 0004 cost= 0.1930 accuracy=0.984783
-Epoch: 0005 cost= 0.1982 accuracy=0.988584
+$ python cnn.py<br>
+Epoch: 0001 cost= 0.2593 accuracy=0.879617<br>
+Epoch: 0002 cost= 0.2437 accuracy=0.968667<br>
+Epoch: 0003 cost= 0.2490 accuracy=0.979500<br>
+Epoch: 0004 cost= 0.1930 accuracy=0.984783<br>
+Epoch: 0005 cost= 0.1982 accuracy=0.988584<br>
 
